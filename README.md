@@ -1,1 +1,1 @@
-[# cssMemeSlider](https://vikisolo.github.io/cssMemeSlider/cssMemeSlider/index.html)
+(https://vikisolo.github.io/cssMemeSlider/cssMemeSlider/index.html)
