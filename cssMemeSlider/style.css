@@ -82,13 +82,16 @@ h2{
 
 .slider {
   margin-top: 50%;
-  max-width:  43.75rem; /*размер всего слайдера*/
+  max-width:  1200px; /*размер всего слайдера*/
   width: 100%;
   height:  37.5rem;
   overflow: hidden;
   border: 0.438rem solid #01300f;
   border-radius:1.25rem;
   background-color:rgb(12, 12, 12);
+
+
+
 }
 
 
@@ -101,20 +104,20 @@ h2{
 
 .navigation {
   position: absolute;
-  bottom: 1rem;
-  left: 70%;/*движуха кнопок в лево*/
+  bottom: 100px;
+  left: 75%;/*движуха кнопок в лево*/
   transform: translateX(-50%);
   display: flex;
 }
 .navigation label {
   display: inline-block;
-  width: 3.125rem;
-  height: 3.125rem;
+  width:1.25rem;
+  height: 1.25rem;
   cursor: pointer;
   margin: 0 3px;
   box-shadow: 0 0 0.125rem 0 rgba(207, 36, 36, 0.8);
   border-radius: 100%;
-  border: 0.625rem solid #0db133;
+  border: 0.313rem solid #0db133;
  
   background-color: #967dda;
 }
@@ -123,7 +126,7 @@ h2{
   transform:scale(1.1);
   background-color: #f1f1f1;;
   border-radius: 100%;
-  border: 0.625rem solid #da1919;
+  border: 0.313rem solid #da1919;
   
 }
 
@@ -204,10 +207,6 @@ article img{ /*размер изображений слайдера*/
 #r5:checked ~ .s1 {
   margin-left: -100%;
 }
-#active label:hover{ /*поведение чекбокса при наведении*/
-  background: #babd0a;
-  border-color: #be6f08 !important; /*выполнение в любом случае*/
-}
 
 /*----------------Тест---------------*/
 .product-х{
@@ -223,34 +222,40 @@ article img{ /*размер изображений слайдера*/
  
 }
 .product-item {
-  width: 31.25rem;
+  width: 800px;
   margin: 2.813rem;
-  background: rgb(10, 10, 10);
+  background: rgba(32, 31, 31, 0.356);
   border: 0.125rem solid #0b8a26;
   border-radius:1.25rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-position: center;
   background-size: cover;
-  margin: center;
+  margin-left: 200px;
   height: 25rem;
 }
 .product-item img {
   display: block;
   margin: 0 auto;
-padding: 3.125rem;
+  padding: 3.125rem;
+  width: 60%;
 }
+
 .product-list {
   display: inline-block;
-  background: #0a0a0a;
-margin-left: 1.875rem;
+  background: #181717;
+margin-left: 10px;
 text-align: left;
-
+background-repeat: no-repeat;
 }
+
+
 .product-list h3 {
   display: inline-block;
   font-size: 1.125rem;
   font-weight: 400;
   color: #e7d8d8;
+  margin-top: auto;
+
 }
 
 /*Footer*/
@@ -269,4 +274,46 @@ text-align: left;
   text-align:right;
   font-size: 1.75rem;
   overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .slider {
+      width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .slider{
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+  }
+
+  .product-list {
+      width: 100%;
+  }
+
+  .navigation {
+      margin-top: 100px;
+  }
+
+  .product-list {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+ .product-list {
+     font-size: 32px;
+ }
+
+ .product-item {
+     height: 500px;
+ }
+
+ .slider {
+     height: 400px;
+ }
 }
